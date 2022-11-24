@@ -63,7 +63,7 @@ include!(concat!(env!("OUT_DIR"), "/bindings.rs"));
 
 macro_rules! as_c_string {
     ($target:expr) => {
-        std::ffi::CString::new($target).unwrap().as_ptr();
+        std::ffi::CString::new($target).unwrap().as_ptr()
     };
 }
 
